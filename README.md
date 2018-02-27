@@ -1,12 +1,12 @@
 # SCA-Boundary-Learning
-This reposotiry contains the necessary libraries, scripts and instructions to learn a Dual-Arm Self-Collision Avoidance Boundary. With the following steps you can learn a Self-Collision-Avoidance Boundary for a Dual-Arm Maniupulator setup that is used as a constraint for a centralized inverse kinematic solver, as described in [1]
+This repository contains the necessary libraries, scripts and instructions to learn a Dual-Arm Self-Collision Avoidance Boundary. With the following steps you can learn a Self-Collision-Avoidance Boundary for a Dual-Arm Maniupulator setup that is used as a constraint for a centralized inverse kinematic solver, as described in [1]
 
 #### Reference
 [1] [Sina Mirrazavi](http://lasa.epfl.ch/people/member.php?SCIPER=233855), [Nadia Figueroa](http://lasa.epfl.ch/people/member.php?SCIPER=238387) and Aude Billard, "A Unified Framework for Coordinated
 Multi-Arm Motion Planning" *International Journal of Robotics Research* 
 
 
-## Step 1: Generate a dataset using this package:
+## Step 1: Generate a Dual-Arm Collision Dataset
 
 https://github.com/sinamr66/SCA_data_construction
 
@@ -59,3 +59,6 @@ Must write instructions for this...
 https://github.com/sinamr66/QP_IK_solver
 
 Must write instructions for this...
+
+**Current Maintainer**: [Nadia Figueroa](http://lasa.epfl.ch/people/member.php?SCIPER=238387) (nadia.figueroafernandez AT epfl dot ch)
+
