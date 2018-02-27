@@ -16,7 +16,7 @@ Follow the instructions in the README file, you should modify the following inpu
 - DH parameters of the manipulators
 - Joint workspace constraints, if any. 
 
-This will generate a folder ./data which contains text files for the collided (y=-1) and non-collided (y=+1) joint configurations in form of the 3D positions of all joints wrt. one of the robot bases (the one defined as the origin x = [0 0 0]). This is the feature space that the SCA Boundary is learned in, if you have N joints (for all robots) your feature vector is ![alt text](https://github.com/epfl-lasa/SCA-Boundary-Learning/blob/master/utils/images_readme/CodeCogsEqn.gif "xinR").
+This will generate a folder ./data which contains text files for the collided (y=-1) and non-collided (y=+1) joint configurations in form of the 3D positions of all joints wrt. one of the robot bases (the one defined as the origin x = [0 0 0]). This is the feature space that the SCA Boundary is learned in, if you have N joints (for all robots) your feature vector is ![alt text](https://github.com/nbfigueroa/SCA-Boundary-Learning/blob/master/utils/images_readme/CodeCogsEqn.gif "xinR").
 
 
 ## Step 2: Install dependencies for SCA-Boundary-Learning package
