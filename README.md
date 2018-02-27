@@ -6,7 +6,7 @@ This reposotiry contains the necessary libraries, scripts and instructions to le
 Multi-Arm Motion Planning" *International Journal of Robotics Research* 
 
 
-## Step 1: Generate a dataset using this package:
+## Step 1: Generate a Dual-Arm Collision Dataset
 
 https://github.com/sinamr66/SCA_data_construction
 
