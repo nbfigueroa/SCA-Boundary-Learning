@@ -59,3 +59,6 @@ Must write instructions for this...
 https://github.com/sinamr66/QP_IK_solver
 
 Must write instructions for this...
+
+### Contact Information
+Current Maintainer: [Nadia Figueroa](http://lasa.epfl.ch/people/member.php?SCIPER=238387)
