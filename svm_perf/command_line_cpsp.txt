@@ -1,0 +1,36 @@
+Command to train and test CPSP algo
+% Execute the following command in terminal to learn the Sparse SVM
+
+% Input parameters
+% From http://www.cs.cornell.edu/people/tj/svm_light/svm_perf.html
+-c float    -> C: trade-off between training error and margin (default 0.01)
+-t int      -> type of kernel function:
+                0: linear (default)
+                1: polynomial (s a*b+c)^d
+                2: radial basis function exp(-gamma ||a-b||^2)
+                3: sigmoid tanh(s a*b + c)
+                4: user defined kernel from kernel.h
+-g float    -> parameter gamma in rbf kernel
+--i [0..]   -> Use CPSP algorithm for sparse kernel training
+                (must use '-w 9') (see [Joachims/Yu/09]):
+                0: do not use CPSP algorithm.
+                1: CPSP using subset selection for preimages via 59/95 heuristic 
+                2: CPSP using fixed point search (RBF kernel only) (default)
+                4: CPSP using fixed point search with starting point via 59/95 heuristic (RBF kernel only)
+-w [0,..,9] -> choice of structural learning algorithm (default 9):
+                0: n-slack algorithm described in [2]
+                1: n-slack algorithm with shrinking heuristic
+                2: 1-slack algorithm (primal) described in [5]
+                3: 1-slack algorithm (dual) described in [5]
+                4: 1-slack algorithm (dual) with constraint cache [5]
+                9: custom algorithm in svm_struct_learn_custom.c
+--b float   -> value of L2-bias feature. A value of 0 implies not
+                having a bias feature. (default 1)
+                WARNING: This is implemented only for linear kernel!
+--k [0..]   -> Specifies the number of basis functions to use
+                for sparse kernel approximation (both --t and --i). (default 500)
+
+./svm_perf_learn -c 100 -t 2 -g 50 --i 2 -w 9 --b 0 --k 100 ./robotCollision/2d_example.dat ./robotCollision/2d_model.dat
+
+% Execute the following command in terminal to test the learnt SVM
+./svm_perf_classify ./robotCollision/36d-13k-Collision-Fender-Testing.dat ./robotCollision/36d-13k-Collision-Fender-Model.dat ./robotCollision/36d-13k-Collision-Fender-Predictions.dat
