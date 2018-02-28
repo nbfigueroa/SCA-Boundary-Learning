@@ -45,7 +45,7 @@ Once you've followed all the steps, you will have a MATLAB struct named cpsp_mod
 - alpha*y
 - gamma (i.e. inverse of Sigma)
 
-Save the cpsp_model_robots struct AND some samples of the training data for the next step.
+Save the cpsp_model_robots struct AND some samples of the training (or testing) dataset for the next step.
 
 ## Step 5: To evaluate your learnt sparse SVM, we now generate a model for SVMGrad package and test it
 
