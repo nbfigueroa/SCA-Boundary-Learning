@@ -39,11 +39,13 @@ boundary_learning_sparse_CSPS_2D.m
 For a real robot dataset
 boundary_learning_sparse_CSPS_robots.m
 
-Once you've followed all the steps, you will have a MATLAB struct named cpsp_model_*.mat this contains all the parameters of the learnt SVM model:
+Once you've followed all the steps, you will have a MATLAB struct named cpsp_model_robots this contains all the parameters of the learnt SVM model:
 - Support Vectors
 - bias
 - alpha*y
 - gamma (i.e. inverse of Sigma)
+
+Save the cpsp_model_robots struct AND some samples of the training data for the next step.
 
 ## Step 5: To evaluate your learnt sparse SVM, we now generate a model for SVMGrad package and test it
 
