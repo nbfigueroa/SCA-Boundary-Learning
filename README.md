@@ -3,7 +3,7 @@ This repository contains the necessary libraries, scripts and instructions to le
 
 #### Reference
 [1] [Sina Mirrazavi](http://lasa.epfl.ch/people/member.php?SCIPER=233855), [Nadia Figueroa](http://lasa.epfl.ch/people/member.php?SCIPER=238387) and Aude Billard, "A Unified Framework for Coordinated
-Multi-Arm Motion Planning" *International Journal of Robotics Research* 
+Multi-Arm Motion Planning" *International Journal of Robotics Research* [In press]
 
 
 ## Step 1: Generate a Dual-Arm Collision Dataset
