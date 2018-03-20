@@ -42,7 +42,7 @@ boundary_learning_sparse_CSPS_2D.m
 For a real robot dataset, run the following script:
 ```
 boundary_learning_sparse_CSPS_robots.m
-``
+```
 Once you've followed all the steps, you will have a MATLAB struct named cpsp_model_robots this contains all the parameters of the learnt SVM model:
 - Support Vectors
 - bias
