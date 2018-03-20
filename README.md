@@ -24,8 +24,10 @@ This will generate a folder ./data which contains text files for the collided (y
 - [SVMGrad](https://github.com/nbfigueroa/SVMGrad): SVMGrad is a compact library used to evaluate the decision function of a Gaussian RBF Kernel Support Vector Machine, as well as the its first Derivative (Gradient) in both MATLAB and C++.
 
 ## Step 3: Search for optimal hyper-parameters doing cross-validation with standard soft-margin SVM
-boundary_learning_robots.m
 
+```
+boundary_learning_robots.m
+```
 This will generate the optimal hyper-parameters that achieve the highest TPR and lowest FPR.
 
 Note: The training stage in is not linearly increasing, i.e. a sample size of 12k point takes around 1 day, while a sample size of 24k take around 3 days.
