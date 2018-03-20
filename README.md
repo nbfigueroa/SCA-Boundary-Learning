@@ -24,23 +24,25 @@ This will generate a folder ./data which contains text files for the collided (y
 - [SVMGrad](https://github.com/nbfigueroa/SVMGrad): SVMGrad is a compact library used to evaluate the decision function of a Gaussian RBF Kernel Support Vector Machine, as well as the its first Derivative (Gradient) in both MATLAB and C++.
 
 ## Step 3: Search for optimal hyper-parameters doing cross-validation with standard soft-margin SVM
-
+Make sure to add all subfolders to your current directory and run the following script:
 ```
 boundary_learning_robots.m
 ```
-This will generate the optimal hyper-parameters that achieve the highest TPR and lowest FPR.
+This will search for the optimal hyper-parameters that achieve the highest TPR and lowest FPR.
 
 Note: The training stage in is not linearly increasing, i.e. a sample size of 12k point takes around 1 day, while a sample size of 24k take around 3 days.
 
-## Step 4: Learn a sparse SVM via Cuttting-Plane Training 
+## Step 4: Learn a sparse SVM via Cutting-Plane Training 
 Using the optimal hyper-parameters learned from the previous step, you will now train a sparse SVM with a support vector budget K, this is set to default = 3,000. 
 
-For a simple 2D example which can be visualize using SVMGrad:
+For a simple 2D example which can be visualized using SVMGrad run the following script:
+```
 boundary_learning_sparse_CSPS_2D.m
-
-For a real robot dataset
+```
+For a real robot dataset, run the following script:
+```
 boundary_learning_sparse_CSPS_robots.m
-
+``
 Once you've followed all the steps, you will have a MATLAB struct named cpsp_model_robots this contains all the parameters of the learnt SVM model:
 - Support Vectors
 - bias
