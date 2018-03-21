@@ -30,7 +30,7 @@ Follow the instructions of the README file in [SCA-dataset-construction](https:/
 
 This will generate a folder ./data which contains text files for the collided (y=-1) and non-collided (y=+1) joint configurations in form of the 3D positions of all joints wrt. one of the robot bases (the one defined as the origin x = [0 0 0]). This is the feature space that the SCA Boundary is learned in, if you have N joints (for all robots) your feature vector is ![alt text](https://github.com/nbfigueroa/SCA-Boundary-Learning/blob/master/utils/images_readme/CodeCogsEqn.gif "xinR").
 
-## Step 3: Search for optimal hyper-parameters doing cross-validation with standard soft-margin SVM
+## Step 2: Search for optimal hyper-parameters doing cross-validation with standard soft-margin SVM
 Make sure to add all subfolders to your current directory and run the following script:
 ```
 boundary_learning_robots.m
@@ -39,7 +39,7 @@ This will search for the optimal hyper-parameters that achieve the highest TPR a
 
 Note: The training stage in is not linearly increasing, i.e. a sample size of 12k point takes around 1 day, while a sample size of 24k take around 3 days.
 
-## Step 4: Learn a sparse SVM via Cutting-Plane Training 
+## Step 3: Learn a sparse SVM via Cutting-Plane Training 
 Using the optimal hyper-parameters learned from the previous step, you will now train a sparse SVM with a support vector budget K, this is set to default = 3,000. 
 
 For a simple 2D example which can be visualized using SVMGrad run the following script:
@@ -58,12 +58,12 @@ Once you've followed all the steps, you will have a MATLAB struct named cpsp_mod
 
 Save the cpsp_model_robots struct AND some samples of the training (or testing) dataset for the next step.
 
-## Step 5: To evaluate your learnt sparse SVM, we now generate a model for SVMGrad package and test it
+## Step 4: To evaluate your learnt sparse SVM, we now generate a model for SVMGrad package and test it
 Follow the instructions of the README file in [SVMGrad](https://github.com/nbfigueroa/SVMGrad)p ackage...
 
 TODO: Must write instructions for this...
 
-## Step 6: Test it on the real robots using the QP-IK-Solver testing package, this can be done in simulation.
+## Step 5: Test it on the real robots using the QP-IK-Solver testing package, this can be done in simulation.
 
 Follow the instructions of the README file in [QP-IK-Solver](https://github.com/sinamr66/QP_IK_solver) package...
 
