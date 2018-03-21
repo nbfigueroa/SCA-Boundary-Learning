@@ -69,6 +69,12 @@ Must write instructions for this...
 
 https://github.com/sinamr66/QP_IK_solver
 
+<p align="center">
+<img src="https://github.com/nbfigueroa/SCA-Boundary-Learning/blob/master/img/collision_test_sim.gif" width="400"> <img src="https://github.com/nbfigueroa/SCA-Boundary-Learning/blob/master/img/collision_test_real.gif" width="400">
+</p>
+
+
+
 Must write instructions for this...
 
 **Current Maintainer**: [Nadia Figueroa](http://lasa.epfl.ch/people/member.php?SCIPER=238387) (nadia.figueroafernandez AT epfl dot ch)
