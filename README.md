@@ -6,7 +6,7 @@ This repository contains the necessary libraries, scripts and instructions to le
 </p>
 
 #### Reference
-[1] [Nadia Figueroa](http://lasa.epfl.ch/people/member.php?SCIPER=238387) ,[Sina Mirrazavi](http://lasa.epfl.ch/people/member.php?SCIPER=233855), and Aude Billard, "Multi-Arm Self-Collision Avoidance: A Sparse Solution for a Big Data Problem" *ICRA 2018 Workshop on Machine Learning in the Planning and Control of Robot Motion* [Under Review]
+[1] [Nadia Figueroa](http://lasa.epfl.ch/people/member.php?SCIPER=238387) ,[Sina Mirrazavi](http://lasa.epfl.ch/people/member.php?SCIPER=233855), and Aude Billard, "Multi-Arm Self-Collision Avoidance: A Sparse Solution for a Big Data Problem" *ICRA 2018 Workshop on Machine Learning in the Planning and Control of Robot Motion* [Under Review] 
 [2] [Sina Mirrazavi](http://lasa.epfl.ch/people/member.php?SCIPER=233855), [Nadia Figueroa](http://lasa.epfl.ch/people/member.php?SCIPER=238387) and Aude Billard, "A Unified Framework for Coordinated
 Multi-Arm Motion Planning" *International Journal of Robotics Research* [In press]
 
