@@ -16,20 +16,17 @@ Multi-Arm Motion Planning" *International Journal of Robotics Research* [In pres
 
 
 ## Step 1: Generate a Dual-Arm Collision Dataset
-
-<p align="center">
-<img src="https://github.com/nbfigueroa/SCA-Boundary-Learning/blob/master/img/collision_dataset.gif" width="340">
-</p>
-
 Follow the instructions in the README file in [SCA-dataset-construction](https://github.com/sinamr66/SCA_data_construction) package, you should modify the following input paramaters:
 - Sampling resolution (joint angle increment, the 'resolution' variable is a multipler for 10 deg increments, i.e. resolution=2 gives a 20deg increment)
 - Location of the robot bases wrt to each other
 - DH parameters of the manipulators
 - Joint workspace constraints, if any. 
 
+<p align="center">
+<img src="https://github.com/nbfigueroa/SCA-Boundary-Learning/blob/master/img/collision_dataset.gif" width="340">
+</p>
+
 This will generate a folder ./data which contains text files for the collided (y=-1) and non-collided (y=+1) joint configurations in form of the 3D positions of all joints wrt. one of the robot bases (the one defined as the origin x = [0 0 0]). This is the feature space that the SCA Boundary is learned in, if you have N joints (for all robots) your feature vector is ![alt text](https://github.com/nbfigueroa/SCA-Boundary-Learning/blob/master/utils/images_readme/CodeCogsEqn.gif "xinR").
-
-
 
 ## Step 3: Search for optimal hyper-parameters doing cross-validation with standard soft-margin SVM
 Make sure to add all subfolders to your current directory and run the following script:
