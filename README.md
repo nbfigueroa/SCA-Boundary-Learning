@@ -1,12 +1,13 @@
 # SCA-Boundary-Learning
-This repository contains the necessary libraries, scripts and instructions to learn a Dual-Arm Self-Collision Avoidance Boundary. With the following steps you can learn a Self-Collision-Avoidance Boundary for a Dual-Arm Maniupulator setup that is used as a constraint for a centralized inverse kinematic solver, as described in [1]:
+This repository contains the necessary libraries, scripts and instructions to learn a Dual-Arm Self-Collision Avoidance Boundary. With the following steps you can learn a Self-Collision-Avoidance Boundary for a Dual-Arm Maniupulator setup that is used as a constraint for a centralized inverse kinematic solver, as described in [1,2]:
 
 <p align="center">
 <img src="https://github.com/nbfigueroa/SCA-Boundary-Learning/blob/master/img/collision_nadia.gif" width="400"> <img src="https://github.com/nbfigueroa/SCA-Boundary-Learning/blob/master/img/collision_sina.gif" width="400">
 </p>
 
 #### Reference
-[1] [Sina Mirrazavi](http://lasa.epfl.ch/people/member.php?SCIPER=233855), [Nadia Figueroa](http://lasa.epfl.ch/people/member.php?SCIPER=238387) and Aude Billard, "A Unified Framework for Coordinated
+[1] [Nadia Figueroa](http://lasa.epfl.ch/people/member.php?SCIPER=238387) ,[Sina Mirrazavi](http://lasa.epfl.ch/people/member.php?SCIPER=233855), and Aude Billard, "Multi-Arm Self-Collision Avoidance: A Sparse Solution for a Big Data Problem" *ICRA 2018 Workshop on Machine Learning in the Planning and Control of Robot Motion* [Under Review]
+[2] [Sina Mirrazavi](http://lasa.epfl.ch/people/member.php?SCIPER=233855), [Nadia Figueroa](http://lasa.epfl.ch/people/member.php?SCIPER=238387) and Aude Billard, "A Unified Framework for Coordinated
 Multi-Arm Motion Planning" *International Journal of Robotics Research* [In press]
 
 ## Install dependencies for SCA-Boundary-Learning package
