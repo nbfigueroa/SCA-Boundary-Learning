@@ -2,7 +2,7 @@
 This repository contains the necessary libraries, scripts and instructions to learn a Dual-Arm Self-Collision Avoidance Boundary. With the following steps you can learn a Self-Collision-Avoidance Boundary for a Dual-Arm Maniupulator setup that is used as a constraint for a centralized inverse kinematic solver, as described in [1]:
 
 <p align="center">
-<img src="https://github.com/epfl-lasa/ML_toolbox/blob/master/img/kernelPCA.png" width="290"><img src="https://github.com/epfl-lasa/ML_toolbox/blob/master/img/2D_circle.png" width="290"><img src="https://github.com/nbfigueroa/SCA-Boundary-Learning/blob/master/img/collision_sina.gif" width="290">
+<img src="https://github.com/nbfigueroa/SCA-Boundary-Learning/blob/master/img/collision_nadia.gif" width="290"><img src="https://github.com/nbfigueroa/SCA-Boundary-Learning/blob/master/img/collision_sina.gif" width="290">
 </p>
 
 #### Reference
