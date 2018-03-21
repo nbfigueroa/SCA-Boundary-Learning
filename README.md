@@ -12,6 +12,11 @@ Multi-Arm Motion Planning" *International Journal of Robotics Research* [In pres
 
 ## Step 1: Generate a Dual-Arm Collision Dataset
 
+<p align="center">
+<img src="https://github.com/nbfigueroa/SCA-Boundary-Learning/blob/master/img/collision_dataset.gif" width="340">
+</p>
+
+
 https://github.com/sinamr66/SCA_data_construction
 
 Follow the instructions in the README file, you should modify the following input paramaters:
