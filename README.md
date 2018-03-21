@@ -14,10 +14,11 @@ Multi-Arm Motion Planning" *International Journal of Robotics Research* [In pres
 - [SCA-dataset-construction](https://github.com/sinamr66/SCA_data_construction): Constructs a dataset of 'collided' and 'boundary' joint configurations. 
 - [ML_toolbox](https://github.com/epfl-lasa/ML_toolbox): We use the cross-validation/grid-search functions + standard SVM learning (from libSVM libary).
 - [SVMGrad](https://github.com/nbfigueroa/SVMGrad): SVMGrad is a compact library used to evaluate the decision function of a Gaussian RBF Kernel Support Vector Machine, as well as the its first Derivative (Gradient) in both MATLAB and C++.
+- [QP-IK-Solver](https://github.com/sinamr66/QP_IK_solver): Centralized inverse kinematic (IK) solver for multi-arm systems formulated as a quadratic program with self-collision-avoidance constraints.
 
 
 ## Step 1: Generate a Dual-Arm Collision Dataset
-Follow the instructions in the README file in [SCA-dataset-construction](https://github.com/sinamr66/SCA_data_construction) package, you should modify the following input paramaters:
+Follow the instructions of the README file in [SCA-dataset-construction](https://github.com/sinamr66/SCA_data_construction) package, you should modify the following input paramaters:
 - Sampling resolution (joint angle increment, the 'resolution' variable is a multipler for 10 deg increments, i.e. resolution=2 gives a 20deg increment)
 - Location of the robot bases wrt to each other
 - DH parameters of the manipulators
@@ -58,24 +59,19 @@ Once you've followed all the steps, you will have a MATLAB struct named cpsp_mod
 Save the cpsp_model_robots struct AND some samples of the training (or testing) dataset for the next step.
 
 ## Step 5: To evaluate your learnt sparse SVM, we now generate a model for SVMGrad package and test it
+Follow the instructions of the README file in [SVMGrad](https://github.com/nbfigueroa/SVMGrad)p ackage...
 
-https://github.com/nbfigueroa/SVMGrad
-
-Follow the instructions in the README file. 
-
-Must write instructions for this...
+TODO: Must write instructions for this...
 
 ## Step 6: Test it on the real robots using the QP-IK-Solver testing package, this can be done in simulation.
 
-https://github.com/sinamr66/QP_IK_solver
+Follow the instructions of the README file in [QP-IK-Solver](https://github.com/sinamr66/QP_IK_solver) package...
 
 <p align="center">
 <img src="https://github.com/nbfigueroa/SCA-Boundary-Learning/blob/master/img/collision_test_sim.gif" width="400"> <img src="https://github.com/nbfigueroa/SCA-Boundary-Learning/blob/master/img/collision_test_real.gif" width="400">
 </p>
 
-
-
-Must write instructions for this...
+TODO: Must write instructions for this...
 
 **Current Maintainer**: [Nadia Figueroa](http://lasa.epfl.ch/people/member.php?SCIPER=238387) (nadia.figueroafernandez AT epfl dot ch)
 
